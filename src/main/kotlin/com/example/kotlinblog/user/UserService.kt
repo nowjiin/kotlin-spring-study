@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service
 @Service
 class UserService(
     private val userRepository: UserRepository,
-    private val passwordEncoder: BCryptPasswordEncoder
+    private val passwordEncoder: BCryptPasswordEncoder,
 ) {
     fun registerUser(user: UserEntity): UserEntity {
         // 이메일 중복 체크
