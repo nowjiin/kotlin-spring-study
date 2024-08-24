@@ -1,6 +1,8 @@
 plugins {
     kotlin("jvm") version "1.9.24"
     kotlin("plugin.spring") version "1.9.24"
+    //매개변수 없는 생성자를 위해 코틀린 JPA 추가
+    kotlin("plugin.jpa") version "1.9.24"
     id("org.springframework.boot") version "3.3.2"
     id("io.spring.dependency-management") version "1.1.6"
     // lint plugin Spotless
