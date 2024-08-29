@@ -21,5 +21,5 @@ data class PostEntity(
     val createdAt: LocalDateTime = LocalDateTime.now(),
 
     @OneToMany(mappedBy = "post", cascade = [CascadeType.ALL], orphanRemoval = true)
-    val likes: List<LikeEntity> = mutableListOf()
+    val likes: List<LikeEntity> = mutableListOf(),
 )
